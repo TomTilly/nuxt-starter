@@ -1,0 +1,24 @@
+{
+  "css.validate": false, // Disable built-in lint
+  "less.validate": false, // Disable built-in lint
+  "scss.validate": false, // Disable built-in lint
+  "stylelint.enable": true, // Enable stylelint
+  "stylelint.validate": ["css", "less", "postcss", "vue"], // Add vue files
+  "editor.codeActionsOnSave": {
+    "source.fixAll.stylelint": true
+  },
+  "javascript.validate.enable": false, // turns off VSCode's default syntax validation (we're using ESLint)
+  "html.validate.scripts": false, // ^ditto
+  "editor.defaultFormatter": "esbenp.prettier-vscode", // uses Prettier extension formatter
+  "javascript.format.enable": false,
+  "editor.formatOnSave": true,
+  "[vue]": {
+    "editor.formatOnSave": false,
+    "editor.defaultFormatter": null
+  },
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": true
+  },
+  "eslint.validate": ["typescript", "javascript", "vue"],
+  "eslint.run": "onSave"
+}
